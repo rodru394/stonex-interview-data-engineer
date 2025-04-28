@@ -1,0 +1,1564 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/24/2025 11:49:15 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TRPRDTB8ZN5B-L"
+  DTS:CreatorName="HRBINC\A1072698"
+  DTS:DTSID="{0E523E31-71E0-40F2-9D63-0ADD3AC2B672}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{4BA3EA09-2DD8-48B5-A02B-8036B8CBB1C8}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{229B5F06-FF6C-4E7C-8583-E9CFFADE46CF}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\a1072698\Downloads\stonex-interview-data-engineer-main\stonex-interview-data-engineer-main\customers.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerId"
+              DTS:DTSID="{8817CBA3-08F2-401F-9EF6-DC1B89FDAE8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FirstName"
+              DTS:DTSID="{45C88C36-F496-4669-9168-EA209A9001AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastName"
+              DTS:DTSID="{3859DA2C-4A0E-4A1C-8358-BBEC1E44B824}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{4571C863-EC8E-4752-BEC3-C781AFD15FBB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{C2E073CC-0C9F-498E-A733-3B06DFE85F56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{7D6602DC-30BB-4349-A341-0323C6F5B725}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone1"
+              DTS:DTSID="{8D7CA9B2-2D81-43FD-8706-340D34CB2D00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone2"
+              DTS:DTSID="{C6395A71-DDE3-45C8-AB7D-9A8405B1C137}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Email"
+              DTS:DTSID="{2C065D70-1A59-4C2C-817E-474A42310C27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SubscriptionDate"
+              DTS:DTSID="{5C205697-7794-4036-8F11-ABD6B2C9F3C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Website"
+              DTS:DTSID="{CE9E5698-975D-493E-BFBD-0BCCF5428FF1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3CC2B05D-E075-4272-8483-C54931C0E7C1}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Vijay\MydeskTop\stonex\data\customers.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerId"
+              DTS:DTSID="{F738B077-4EDE-4CB0-9E1C-75381DAEFD2E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FirstName"
+              DTS:DTSID="{C80D7D46-EA46-49BF-AF1E-262596228C26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastName"
+              DTS:DTSID="{E8263F17-C998-4D38-B934-8CA72A9F7E15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{BB8AFE32-E89A-4BFA-BEE4-D4FF6F80A90E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{2D216FB3-8FBA-490E-B7A7-09102464CF2C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{5292B5CC-06F9-4EC5-ADEB-3EB4A9B788FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone1"
+              DTS:DTSID="{D95676BE-1B29-4710-8062-E4ED29AD3560}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone2"
+              DTS:DTSID="{19A686A7-363A-4B0E-94AF-86F7789F0BB6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Email"
+              DTS:DTSID="{3677239F-B188-44F7-BE0D-F9362E281B94}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SubscriptionDate"
+              DTS:DTSID="{A7CB9BAB-63C1-4E6F-AF19-697175810117}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Website"
+              DTS:DTSID="{9C504052-92D2-4DF6-BD56-A1531F2D15F0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FDFC6AA4-8BEC-40C4-B53C-2E89C06E4A62}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{FDFC6AA4-8BEC-40C4-B53C-2E89C06E4A62}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3C74F1D4-AC73-4B7E-828C-B541C8D572A3}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{3C74F1D4-AC73-4B7E-828C-B541C8D572A3}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 10]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{399FB7A4-3368-480E-AE53-F476525FFC7C}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{399FB7A4-3368-480E-AE53-F476525FFC7C}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 10;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E38C6E9E-61B2-40E0-9145-D3CFA3C7B9DF}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{E38C6E9E-61B2-40E0-9145-D3CFA3C7B9DF}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{19848864-8FA9-47F9-AFE8-17E75EC8F45B}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{19848864-8FA9-47F9-AFE8-17E75EC8F45B}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9388AEF9-E8F0-4DCB-9AF1-64C9DA6F32C2}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{9388AEF9-E8F0-4DCB-9AF1-64C9DA6F32C2}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 4;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0E4099CF-383D-4006-963F-94CB0CEFF3AD}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{0E4099CF-383D-4006-963F-94CB0CEFF3AD}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 5;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 6]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A4B4CB30-41B4-4357-AC0A-75FD76C48FAE}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{A4B4CB30-41B4-4357-AC0A-75FD76C48FAE}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 6;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 7]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DB806F03-A629-42AF-85F0-52952D4295F6}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{DB806F03-A629-42AF-85F0-52952D4295F6}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 7;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 8]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4904F641-A0DD-4BFA-AA84-8C87B4685A12}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{4904F641-A0DD-4BFA-AA84-8C87B4685A12}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 8;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 9]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{90AE81EF-8CBA-40B8-B326-72E940CD777F}"
+      DTS:ObjectName="TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TRPRDTB8ZN5B-L\SQLEXPRESS;Initial Catalog=Interview;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{90AE81EF-8CBA-40B8-B326-72E940CD777F}TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 9;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load Customer Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CE3031ED-2F3D-4A49-AA88-6CEEFAE1A558}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load Customer Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load Customer Data\CustomerId_Derived"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="CustomerId_Derived"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load Customer Data\CustomerId_Derived.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Customer Data\CustomerId_Derived.Inputs[Derived Column Input].Columns[CustomerId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerId"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Load Customer Data\CustomerId_Derived.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Output].Columns[CustomerId_Derived]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Output].Columns[CustomerId_Derived]"
+                      name="CustomerId_Derived"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,50,1252)#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerId]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,50,1252)CustomerId</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Load Customer Data\CustomerId_Derived.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Customer Data\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[SubscriptionDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="SubscriptionDate"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[SubscriptionDate]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="150"
+                      cachedName="Country"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[Phone1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Phone1"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone1]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[Phone2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Phone2"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone2]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[Email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Email"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="FirstName"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LastName"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[Company]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Company"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Company]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input].Columns[CustomerId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustomerId"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[SubscriptionDate_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="500"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[SubscriptionDate_converted]"
+                      name="SubscriptionDate_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[SubscriptionDate]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Country_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="150"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Country_converted]"
+                      name="Country_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Country]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Phone1_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Phone1_converted]"
+                      name="Phone1_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone1]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Phone2_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Phone2_converted]"
+                      name="Phone2_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone2]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Email_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Email_converted]"
+                      name="Email_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Email]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[FirstName_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[FirstName_converted]"
+                      name="FirstName_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[FirstName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[LastName_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[LastName_converted]"
+                      name="LastName_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[LastName]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Company_converted]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Company_converted]"
+                      name="Company_converted"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Company]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CustomerId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CustomerId]"
+                      name="Copy of CustomerId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerId]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Customer Data\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Customer Data\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerId]"
+                      length="50"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[CustomerId]"
+                      name="CustomerId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FirstName]"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LastName]"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Company]"
+                      length="255"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Company]"
+                      name="Company"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      length="50"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      length="150"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Phone1]"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone1]"
+                      name="Phone1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Phone2]"
+                      length="100"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Phone2]"
+                      name="Phone2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Email]"
+                      length="255"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[SubscriptionDate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubscriptionDate]"
+                      length="500"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[SubscriptionDate]"
+                      name="SubscriptionDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Website]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Website]"
+                      length="50"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].Columns[Website]"
+                      name="Website"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CustomerId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustomerId" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Company" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Phone1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Phone1" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Phone2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Phone2" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SubscriptionDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SubscriptionDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Website]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Website" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Customer Data\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Extract].[Customers]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Customer Data\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 10]"
+                  connectionManagerRefId="Package.ConnectionManagers[TRPRDTB8ZN5B-L\SQLEXPRESS.Interview 10]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SubscriptionDate_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="SubscriptionDate_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubscriptionDate]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[SubscriptionDate_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="150"
+                      cachedName="Country_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Country_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FirstName_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="FirstName_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[FirstName_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LastName_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="LastName_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[LastName_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Company_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Company_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Company]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Company_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Phone1_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Phone1_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone1]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Phone1_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Phone2_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Phone2_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone2]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Phone2_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Email_converted]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Email_converted"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Email_converted]" />
+                    <inputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of CustomerId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Copy of CustomerId"
+                      externalMetadataColumnId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      lineageId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of CustomerId]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Index]"
+                      dataType="i4"
+                      name="Index" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Company" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="150"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Phone1" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Phone2" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SubscriptionDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="SubscriptionDate" />
+                    <externalMetadataColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="CustomerId" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Customer Data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Customer Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Customer Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load Customer Data.Paths[Data Conversion Output]"
+              endId="Package\Load Customer Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Load Customer Data\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Load Customer Data.Paths[Derived Column Output]"
+              endId="Package\Load Customer Data\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Load Customer Data\CustomerId_Derived.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Load Customer Data.Paths[Flat File Source Output]"
+              endId="Package\Load Customer Data\CustomerId_Derived.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Load Customer Data\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="177.333333333334,42.6666666666667"
+          Id="Package\Load Customer Data"
+          TopLeft="156.874992987141,97.8421041888709" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load Customer Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\Load Customer Data\Flat File Source"
+          TopLeft="199.999991059304,86.8947358880182" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Load Customer Data\Data Conversion"
+          TopLeft="214.874990640208,307.203470613586" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Load Customer Data\OLE DB Destination"
+          TopLeft="655.291637618717,177.97368286579" />
+        <EdgeLayout
+          Id="Package\Load Customer Data.Paths[Data Conversion Output]"
+          TopLeft="319.319435084653,307.203470613586">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="423.305535867397,-86.5631210811302"
+              Start="0,0"
+              End="423.305535867397,-79.0631210811302">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-31.1437629680462" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-31.1437629680462"
+                    Point2="0,-35.1437629680462"
+                    Point3="4,-35.1437629680462" />
+                  <mssgle:LineSegment
+                    End="419.305535867397,-35.1437629680462" />
+                  <mssgle:CubicBezierSegment
+                    Point1="419.305535867397,-35.1437629680462"
+                    Point2="423.305535867397,-35.1437629680462"
+                    Point3="423.305535867397,-39.1437629680462" />
+                  <mssgle:LineSegment
+                    End="423.305535867397,-79.0631210811302" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177.333333333334,42.6666666666667"
+          Id="Package\Load Customer Data\CustomerId_Derived"
+          TopLeft="184.249992009253,163.535086943007" />
+        <EdgeLayout
+          Id="Package\Load Customer Data.Paths[Flat File Source Output]"
+          TopLeft="275.124991534278,129.561402554685">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.9736843883222"
+              Start="0,0"
+              End="0,26.4736843883222">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4736843883222" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Customer Data.Paths[Derived Column Output]"
+          TopLeft="271.006935769175,206.201753609674">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,101.001717003913"
+              Start="0,0"
+              End="0,93.5017170039127">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,93.5017170039127" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Customer Data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
